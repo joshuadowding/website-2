@@ -1,0 +1,42 @@
+title: Joshua Dowding's Portfolio
+author: Joshua Dowding
+description: Joshua Dowding's personal blog and portfolio.
+email: joshuadowding@outlook.com
+
+#lang: en-GB
+locale: en-GB
+timezone: GB
+
+url: https://joshuadowding.github.io
+baseurl:
+permalink: /:title/
+
+destination: ./bin/
+source: ./src/
+include: ['_pages']
+exclude: ['bin/*', 'vendor/', 'node_modules/', 'gemfile', 'gemfile.lock', 'README.md']
+
+safe: false
+encoding: utf-8
+rvm: 2.7.1
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-sass-converter
+  - jekyll-seo-tag
+
+paginate: 5
+paginate_path: /page:num/
+
+sitemap: true
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+
+sass:
+  sass_dir: ./_sass/
+  style: compressed

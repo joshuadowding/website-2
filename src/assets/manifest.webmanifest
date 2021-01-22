@@ -1,0 +1,34 @@
+{
+  "name": "Joshua Dowding's Website & Blog",
+  "short_name": "Joshua Dowding",
+  "description": "",
+  "lang": "en-GB",
+  "background_color": "",
+  "theme_color": "",
+  "start_url": ".",
+  "icons": [{
+    "src": "",
+    "type": "image/png",
+    "sizes": "48x48"
+  }, {
+    "src": "",
+    "type": "image/png",
+    "sizes": "72x72"
+  }, {
+    "src": "",
+    "type": "image/png",
+    "sizes": "96x96"
+  }, {
+    "src": "",
+    "type": "image/png",
+    "sizes": "144x144"
+  }, {
+    "src": "",
+    "type": "image/png",
+    "sizes": "168x168"
+  }, {
+    "src": "",
+    "type": "image/png",
+    "sizes": "192x192"
+  }]
+}

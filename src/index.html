@@ -1,0 +1,24 @@
+---
+title: "Home"
+layout: default
+---
+
+<div class="container-md">
+  <div class="row">
+    <div class="col-md-9">
+
+      {% for post in site.categories.blog limit:5 %}
+        <div class="post">
+          <div class="post-header">
+            <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
+            <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+          </div>
+          <div class="post-content">
+            <p>{{ post.excerpt | truncatewords:64 }}</p>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
