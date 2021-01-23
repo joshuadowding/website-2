@@ -9,7 +9,9 @@ layout: default
 
       <div class="hero-wrapper">
           <div class="hero-content">
-            <img class="hero-img" alt="hero-image" src="''" />
+            <div class="hero-image-wrapper">
+              <img class="hero-img" alt="hero-image" src="''" />
+            </div>
             <h2 class="hero-h2">Joshua Dowding</h2>
             <p class="hero-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
@@ -31,7 +33,7 @@ layout: default
           {% for post in site.categories.blog limit:5 %}
             <div class="post">
               <div class="post-header">
-                <p class="post-p">{{ post.date | date: "%B %-d, %Y" }}</p>
+                <p class="post-p">{{ post.date | date: "%b %-d, %Y" }}</p>
                 <h4 class="post-h4">
                   <a class="post-a" href="{{ post.url }}">{{ post.title }}</a>
                 </h4>
