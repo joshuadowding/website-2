@@ -72,7 +72,7 @@ html {
 		.hero-wrapper {
 			margin: 8rem 0 8rem 0;
 
-			.hero {
+			.hero-content {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -94,6 +94,47 @@ html {
 				p.hero-p {
 					max-width: 75%;
 					margin: 0;
+				}
+			}
+		}
+
+		.list-wrapper {
+			.list-header {
+				margin: 0 0 12px 0;
+
+				h3.list-h3 {
+					font-weight: 700;
+				}
+			}
+
+			.list-content {
+				display: flex;
+				flex-direction: column;
+
+				.post {
+					margin: 0 0 12px 0;
+
+					&:last-child {
+						margin: 0;
+					}
+
+					.post-header {
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+
+						p.post-p {
+							margin: 0 12px 0 0;
+						}
+
+						h4.post-h4 {
+							margin: 0;
+
+							a.post-a {
+								display: block;
+							}
+						}
+					}
 				}
 			}
 		}

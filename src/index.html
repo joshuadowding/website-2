@@ -8,7 +8,7 @@ layout: default
     <div class="col-md-6">
 
       <div class="hero-wrapper">
-          <div class="hero">
+          <div class="hero-content">
             <img class="hero-img" alt="hero-image" src="''" />
             <h2 class="hero-h2">Joshua Dowding</h2>
             <p class="hero-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -21,19 +21,25 @@ layout: default
 
 <div class="container-md">
   <div class="row">
-    <div class="col-md-9">
+    <div class="col-md-7">
 
-      {% for post in site.categories.blog limit:5 %}
-        <div class="post">
-          <div class="post-header">
-            <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
-            <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
-          </div>
-          <div class="post-content">
-            <p>{{ post.excerpt | truncatewords:64 }}</p>
-          </div>
+      <div class="list-wrapper" id="recent-posts">
+        <div class="list-header">
+            <h3 class="list-h3">Recent Posts</h3>
         </div>
-      {% endfor %}
+        <div class="list-content">
+          {% for post in site.categories.blog limit:5 %}
+            <div class="post">
+              <div class="post-header">
+                <p class="post-p">{{ post.date | date: "%B %-d, %Y" }}</p>
+                <h4 class="post-h4">
+                  <a class="post-a" href="{{ post.url }}">{{ post.title }}</a>
+                </h4>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
 
     </div>
   </div>
