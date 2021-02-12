@@ -18,7 +18,7 @@ exclude: ['bin/*', 'vendor/', 'node_modules/', 'gemfile', 'gemfile.lock', 'READM
 
 safe: false
 encoding: utf-8
-rvm: 2.7.1
+rvm: 2.7.2
 
 plugins:
   - jekyll-feed
