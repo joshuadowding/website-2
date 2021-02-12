@@ -1,29 +1,29 @@
 *, *::before, *::after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body, header, footer div, span, h1, h2, h3, h4, h5, h6, p, a, strong, ul, ol, li, img, input, textarea {
-	margin: 0;
-	padding: 0;
-	border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 :root {
-	&.theme-light {
-		--background-colour: #{#EEF1F4};
-		--foreground-colour: #{#FFFFFF};
+  &.theme-light {
+    --background-colour: #{#EEF1F4};
+    --foreground-colour: #{#FFFFFF};
 
-		--text-colour: #{#000000};
-		--link-colour: #{#1F5BE3};
-	}
+    --text-colour: #{#000000};
+    --link-colour: #{#1F5BE3};
+  }
 
-	&.theme-dark {
-		--background-colour: #{#272727};
-		--foreground-colour: #{#191919};
+  &.theme-dark {
+    --background-colour: #{#272727};
+    --foreground-colour: #{#191919};
 
-		--text-colour: #{#FFFFFF};
-		--link-colour: #{#1F5BE3};
-	}
+    --text-colour: #{#FFFFFF};
+    --link-colour: #{#1F5BE3};
+  }
 }

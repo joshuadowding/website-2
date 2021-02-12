@@ -5,173 +5,173 @@
 @import "mixins";
 
 html {
-	font-size: 62.5%;
-	max-width: 1280px;
-	min-width: 320px;
-	margin: 0 auto;
+  font-size: 62.5%;
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
 
-	body {
-		min-width: 320px;
+  body {
+    min-width: 320px;
 
-		h1 {
-			@include font-face-default;
-			font-size: 2.4rem;
-		}
+    h1 {
+      @include font-face-default;
+      font-size: 2.4rem;
+    }
 
-		h2 {
-			@include font-face-default;
-			font-size: 2.2rem;
-		}
+    h2 {
+      @include font-face-default;
+      font-size: 2.2rem;
+    }
 
-		h3 {
-			@include font-face-default;
-			font-size: 2rem;
-		}
+    h3 {
+      @include font-face-default;
+      font-size: 2rem;
+    }
 
-		h4 {
-			@include font-face-default;
-			font-size: 1.8rem;
-		}
+    h4 {
+      @include font-face-default;
+      font-size: 1.8rem;
+    }
 
-		h5 {
-			@include font-face-default;
-			font-size: 1.6rem;
-		}
+    h5 {
+      @include font-face-default;
+      font-size: 1.6rem;
+    }
 
-		h6 {
-			@include font-face-default;
-			font-size: 1.4rem;
-		}
+    h6 {
+      @include font-face-default;
+      font-size: 1.4rem;
+    }
 
-		div, span, input, textarea, strong {
-			@include font-face-default;
-			font-size: 1.4rem;
-		}
+    div, span, input, textarea, strong {
+      @include font-face-default;
+      font-size: 1.4rem;
+    }
 
-		p {
-			@include font-face-default;
-			font-size: 1.4rem;
-		}
+    p {
+      @include font-face-default;
+      font-size: 1.4rem;
+    }
 
-		a {
-			@include font-face-default;
-			font-size: 1.4rem;
-		}
+    a {
+      @include font-face-default;
+      font-size: 1.4rem;
+    }
 
-		ul {
-			li {
-				@include font-face-default;
-				font-size: 1.4rem;
-			}
-		}
+    ul {
+      li {
+        @include font-face-default;
+        font-size: 1.4rem;
+      }
+    }
 
-		.row {
-			justify-content: center;
-		}
+    .row {
+      justify-content: center;
+    }
 
-		.hero-wrapper {
-			margin: 8rem 0 8rem 0;
+    .hero-wrapper {
+      margin: 8rem 0 8rem 0;
 
-			.hero-content {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				text-align: center;
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
 
-				.hero-image-wrapper {
-					height: 70px;
-					width: 70px;
-					margin: 0 0 24px 0;
-					background-color: black;
-					border-radius: 50%;
+        .hero-image-wrapper {
+          height: 70px;
+          width: 70px;
+          margin: 0 0 24px 0;
+          background-color: black;
+          border-radius: 50%;
 
-					img.hero-img {
-						display: block;
-						height: 100%;
-						width: 100%;
-					}
-				}
+          img.hero-img {
+            display: block;
+            height: 100%;
+            width: 100%;
+          }
+        }
 
-				h2.hero-h2 {
-					font-size: 2.8rem;
-					font-weight: 700;
-					margin: 0 0 12px 0;
-				}
+        h2.hero-h2 {
+          font-size: 2.8rem;
+          font-weight: 700;
+          margin: 0 0 12px 0;
+        }
 
-				p.hero-p {
-					max-width: 75%;
-					margin: 0;
-				}
-			}
-		}
+        p.hero-p {
+          max-width: 75%;
+          margin: 0;
+        }
+      }
+    }
 
-		.list-wrapper {
-			.list-header {
-				margin: 0 0 12px 0;
+    .list-wrapper {
+      .list-header {
+        margin: 0 0 12px 0;
 
-				h3.list-h3 {
-					font-weight: 700;
-				}
-			}
+        h3.list-h3 {
+          font-weight: 700;
+        }
+      }
 
-			.list-content {
-				display: flex;
-				flex-direction: column;
+      .list-content {
+        display: flex;
+        flex-direction: column;
 
-				.post {
-					margin: 0 0 12px 0;
+        .post {
+          margin: 0 0 12px 0;
 
-					&:last-child {
-						margin: 0;
-					}
+          &:last-child {
+            margin: 0;
+          }
 
-					.post-header {
-						display: grid;
-						grid-template-columns: 96px auto;
-						align-items: center;
+          .post-header {
+            display: grid;
+            grid-template-columns: 96px auto;
+            align-items: center;
 
-						p.post-p {
-							margin: 0;
-						}
+            p.post-p {
+              margin: 0;
+            }
 
-						h4.post-h4 {
-							margin: 0;
+            h4.post-h4 {
+              margin: 0;
 
-							a.post-a {
-								display: block;
-							}
-						}
-					}
-				}
-			}
-		}
+              a.post-a {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
 
-		.nav-wrapper {
-			display: grid;
-			grid-template-columns: 50% 50%;
-			align-items: center;
-			padding: 16px 32px;
+    .nav-wrapper {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      align-items: center;
+      padding: 16px 0;
 
-			.nav-header {
-				justify-self: start;
+      .nav-header {
+        justify-self: start;
 
-				p.nav-p {
-					margin: 0;
-				}
-			}
+        p.nav-p {
+          margin: 0;
+        }
+      }
 
-			.nav-content {
-				justify-self: end;
+      .nav-content {
+        justify-self: end;
 
-				a.nav-a {
-					margin: 0 12px 0 0;
+        a.nav-a {
+          margin: 0 12px 0 0;
 
-					&:last-child {
-						margin: 0;
-					}
-				}
-			}
-		}
-	}
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
 }
