@@ -4,26 +4,45 @@
   box-sizing: border-box;
 }
 
+::selection, ::-moz-selection {
+  color: #FFFFFF;
+  background: var(--link-colour);
+}
+
 html, body, header, footer div, span, h1, h2, h3, h4, h5, h6, p, a, strong, ul, ol, li, img, input, textarea {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
+div, span, h1, h2, h3, h4, h5, h6, p, a, strong, ul, ol, li, img, input, textarea {
+  color: var(--text-colour);
+}
+
+html, body {
+  background-color: var(--background-colour) !important;
+}
+
 :root {
+  background-color: var(--background-colour);
+
   &.theme-light {
     --background-colour: #{#EEF1F4};
     --foreground-colour: #{#FFFFFF};
 
-    --text-colour: #{#000000};
-    --link-colour: #{#1F5BE3};
+    --border-colour: #{#ABACAE};
+    --text-colour: #{#1A1A1A};
+    --text-colour-invert: #{#FFFFFF};
+    --link-colour: #{#007BFF};
   }
 
   &.theme-dark {
-    --background-colour: #{#272727};
-    --foreground-colour: #{#191919};
+    --background-colour: #{#1A1A1A};
+    --foreground-colour: #{#1A1A1A};
 
+    --border-colour: #{#333333};
     --text-colour: #{#FFFFFF};
-    --link-colour: #{#1F5BE3};
+    --text-colour-invert: #{#1A1A1A};
+    --link-colour: #{#007BFF};
   }
 }
