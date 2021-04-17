@@ -7,8 +7,8 @@ email: joshuadowding@outlook.com
 locale: en-GB
 timezone: GB
 
-url: https://joshuadowding.github.io
-baseurl:
+url: https://joshuadowding.com
+baseurl: ""
 permalink: /:title/
 
 destination: ./bin/
@@ -27,8 +27,8 @@ plugins:
   - jekyll-sass-converter
   - jekyll-seo-tag
 
-paginate: 5
-paginate_path: /page:num/
+paginate: 10
+paginate_path: /:num/
 
 sitemap: true
 
