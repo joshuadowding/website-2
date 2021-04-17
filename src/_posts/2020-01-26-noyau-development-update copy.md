@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Noyau Development Update (19.10) 8
+title: Noyau Development Update (19.10) 7
 image: /img/blog/2020-01-19-1.jpg
-location: /2020/01/19/noyau-development-update
+location: /2020/01/26/noyau-development-update
 category: blog
 tags:
   - ukuu
