@@ -22,13 +22,26 @@ rvm: 2.7.2
 
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-relative-links
   - jekyll-sitemap
   - jekyll-sass-converter
   - jekyll-seo-tag
+  - octopress-paginate
 
-paginate: 10
-paginate_path: /:num/
+collections:
+  articles:
+    output: true
+  scraps:
+    output: true
+  posts:
+    output: true
+collections_dir: ./_collections/
+
+paginate:
+  per_page: 10
+  limit: false
+  permalink: /page:num/
+  reversed: true
 
 sitemap: true
 

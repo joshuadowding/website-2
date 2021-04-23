@@ -1,13 +1,14 @@
 source "https://rubygems.org"
 
-gem "github-pages", "~> 214", group: :jekyll_plugins
+gem "jekyll", group: :jekyll_plugins
 
 group :jekyll_plugins do
   gem 'jekyll-feed'
-  gem 'jekyll-paginate'
+  gem 'jekyll-relative-links'
   gem 'jekyll-sitemap'
   gem 'jekyll-sass-converter'
   gem 'jekyll-seo-tag'
+  gem 'octopress-paginate'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem.

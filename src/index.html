@@ -1,70 +1,15 @@
 ---
 title: "Home"
 layout: default
+paginate: true
 ---
 
-<div class="container-md">
-  <div class="row">
-    <div class="col-md-6">
+{% include components/profile_hero.html %}
 
-      <div class="hero-wrapper">
-          <div class="hero-content">
-            <div class="hero-image-wrapper">
-              <img class="hero-img" alt="hero-image" src="''" />
-            </div>
-            <h2 class="hero-h2">Joshua Dowding</h2>
-            <p class="hero-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-      </div>
+{% include components/post_list.html %}
 
-    </div>
-  </div>
-</div>
-
-<div class="container-md">
-  <div class="row">
-    <div class="col-md-9">
-
-      <div class="list-container" id="home-list">
-        <div class="list-wrapper-nav" id="">
-          <nav class="nav">
-            <a class="nav-a selected" href="/">Articles</a>
-            <a class="nav-a" href="/">Scraps</a>
-          </nav>
-        </div>
-
-        <div class="list-wrapper" id="recent-posts">
-          <div class="list-content">
-            {% for post in paginator.posts %}
-              {% if post.category == "blog" %}
-                <div class="post">
-                  <div class="post-header">
-                    <h4 class="post-h4">
-                      <a class="post-a" href="{{ post.url }}">{{ post.title }}</a>
-                    </h4>
-                    <p class="post-p">{{ post.date | date: "%d-%m-%Y" }}</p>
-                  </div>
-                </div>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-          <div class="list-pagination">
-            <span class="page-number">
-              Page {{ paginator.page }} of {{ paginator.total_pages }}
-            </span>
-
-            {% if paginator.previous_page %}
-              <a href="{{ paginator.previous_page_path }}" class="page-prev active">Previous</a>
-            {% endif %}
-
-            {% if paginator.next_page %}
-              <a href="{{ paginator.next_page_path }}" class="page-next active">Next</a>
-            {% endif %}
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
+<script type="text/javascript">
+  $(() => {
+    $('#post-tab').addClass("selected");
+  });
+</script>

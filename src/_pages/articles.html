@@ -1,0 +1,17 @@
+---
+title: "Articles"
+layout: default
+paginate:
+  collection: articles
+permalink: /articles
+---
+
+{% include components/profile_hero.html %}
+
+{% include components/post_list_articles.html %}
+
+<script type="text/javascript">
+  $(() => {
+    $('#article-tab').addClass("selected");
+  });
+</script>
