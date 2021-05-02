@@ -6,8 +6,10 @@
         <div class="list-wrapper-nav" id="">
           <nav class="nav">
             <a class="nav-a" id="post-tab" href="/"><span>All Posts</span></a>
+            <!--
             <a class="nav-a" id="article-tab" href="{{ site.baseurl }}/articles"><span>Articles</span></a>
             <a class="nav-a" id="scrap-tab" href="{{ site.baseurl }}/scraps"><span>Scraps</span></a>
+            -->
           </nav>
         </div>
 
@@ -27,7 +29,7 @@
 
           <div class="list-pagination">
             <span class="page-number">
-              Page {{ paginator.page }} of {{ paginator.total_pages }}
+              Page {{ paginator.page }} / {{ paginator.total_pages }} ({{ paginator.total_posts }})
             </span>
 
             {% if paginator.previous_page %}

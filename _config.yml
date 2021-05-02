@@ -28,19 +28,10 @@ plugins:
   - jekyll-seo-tag
   - octopress-paginate
 
-collections:
-  articles:
-    output: true
-  scraps:
-    output: true
-  posts:
-    output: true
-collections_dir: ./_collections/
-
 paginate:
   per_page: 10
   limit: false
-  permalink: /page:num/
+  permalink: /:num/
   reversed: true
 
 sitemap: true
