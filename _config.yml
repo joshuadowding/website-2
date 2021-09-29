@@ -26,14 +26,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-sass-converter
   - jekyll-seo-tag
-  - octopress-paginate
+  - jekyll-paginate
 
-paginate:
-  per_page: 10
-  limit: false
-  permalink: /:num/
-  reversed: true
-
+paginate: 5
+paginate_path: "/page:num/"
 sitemap: true
 
 markdown: kramdown
