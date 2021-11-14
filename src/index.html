@@ -3,14 +3,40 @@ title: "Home"
 layout: default
 pagination:
   enabled: true
+  categories:
+    - stories
+    - blogs
+  per_page: 3
 ---
 
-{% include profile_hero.html %}
+<section class="section-index" id="">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-md-7">
 
-{% include post_list.html %}
+        <div class="section-header">
+          <h2 class="section-h2">Latest Stories</h2>
+        </div>
 
-<script type="text/javascript">
-  $(() => {
-    $('#post-tab').addClass("selected");
-  });
-</script>
+      </div>
+    </div>
+  </div>
+
+  {% include post_list.html id="story-posts" source=site.categories.stories show_paginator="false" show_redirect="true" redirect_page="rabbitsandravens" %}
+</section>
+
+<section class="section-index" id="">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-md-7">
+
+        <div class="section-header">
+          <h2 class="section-h2">Latest Articles</h2>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  {% include post_list.html id="blog-posts" source=paginator.posts show_paginator="false" show_redirect="true" redirect_page="blog" %}
+</section>

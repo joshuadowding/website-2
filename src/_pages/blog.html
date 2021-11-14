@@ -1,0 +1,25 @@
+---
+title: "Blog"
+layout: default
+permalink: /blog
+pagination:
+  enabled: true
+  category: blogs
+  per_page: 10
+---
+
+<section class="section-blog" id="">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-md-7">
+
+        <div class="page-header" id="">
+          <h2 class="page-h2">Blog</h2>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  {% include post_list.html id="blog-posts" source=paginator.posts show_paginator="true" %}
+</section>

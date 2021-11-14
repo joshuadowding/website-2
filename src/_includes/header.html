@@ -1,17 +1,27 @@
 <header class="header-wrapper">
+
   <div class="container-md">
     <div class="row">
-      <div class="col-md-9">
+      <div class="col-md-7">
 
         <div class="nav-wrapper">
           <div class="nav-header">
-            <p class="nav-p">Joshua Dowding</p>
+            <div class="nav-a-w"><a class="nav-a nav-home" href="/">Joshua Dowding</a></div>
           </div>
           <div class="nav-content">
             <nav class="nav">
-              <a class="nav-a selected" href="/">Blog</a>
-              <!--<a class="nav-a" href="/">Archive</a>-->
-              <a class="nav-a" href="{{ site.baseurl }}/portfolio">Portfolio</a>
+              <div class="nav-a-w" id="nav-i-r">
+                <a class="nav-a" href="{{ site.baseurl }}/rabbitsandravens">Rabbits & Ravens</a>
+                {% include dots.html %}
+              </div>
+              <div class="nav-a-w" id="nav-i-b">
+                <a class="nav-a" href="{{ site.baseurl }}/blog">Blog</a>
+                {% include dots.html %}
+              </div>
+              <div class="nav-a-w" id="nav-i-p">
+                <a class="nav-a" href="{{ site.baseurl }}/portfolio">Portfolio</a>
+                {% include dots.html %}
+              </div>
             </nav>
           </div>
         </div>
@@ -19,4 +29,5 @@
       </div>
     </div>
   </div>
+
 </header>

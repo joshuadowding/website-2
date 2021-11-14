@@ -1,4 +1,4 @@
-title: Joshua Dowding's Portfolio
+title: Joshua Dowding - Writer; Developer
 author: Joshua Dowding
 description: Joshua Dowding's personal blog and portfolio.
 email: joshuadowding@outlook.com
@@ -38,6 +38,7 @@ pagination:
   limit: 0
 
 sitemap: true
+permalink: pretty
 
 markdown: kramdown
 highlighter: rouge

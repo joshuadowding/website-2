@@ -6,7 +6,7 @@
 
 ::selection, ::-moz-selection {
   color: #FFFFFF;
-  background: var(--link-colour);
+  background: var(--p-h-colour);
 }
 
 html, body, header, footer div, span, h1, h2, h3, h4, h5, h6, p, a, strong, ul, ol, li, img, input, textarea {
@@ -16,7 +16,10 @@ html, body, header, footer div, span, h1, h2, h3, h4, h5, h6, p, a, strong, ul, 
 }
 
 div, span, h1, h2, h3, h4, h5, h6, p, a, strong, ul, ol, li, img, input, textarea {
-  color: var(--text-colour);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: var(--p-t-colour);
+  word-break: break-word;
 }
 
 p:empty {
@@ -24,29 +27,33 @@ p:empty {
 }
 
 html, body {
-  background-color: var(--background-colour) !important;
+  background-color: var(--l-b-shade) !important;
 }
 
 :root {
-  background-color: var(--background-colour);
+  background-color: var(--l-b-shade);
 
   &.theme-light {
-    --background-colour: #{#EEF1F4};
-    --foreground-colour: #{#FFFFFF};
+    --l-b-shade: #{#FFFFFF};  // Lighter Background Shade
+    --d-b-shade: #{#F7F7F7};  // Darker Background Shade
 
-    --border-colour: #{#ABACAE};
-    --text-colour: #{#1A1A1A};
-    --text-colour-invert: #{#FFFFFF};
-    --link-colour: #{#007BFF};
+    --p-h-colour: #{#0396FF}; // Primary Highlight Colour
+    --p-d-colour: #{#0396FF}; // Primary Decal Colour
+    --p-b-colour: #{#707070}; // Primary Border Colour
+
+    --p-t-colour: #{#000000}; // Lighter Text Colour
+    --s-t-colour: #{#707070}; // Darker Text Colour
   }
 
   &.theme-dark {
-    --background-colour: #{#1A1A1A};
-    --foreground-colour: #{#1A1A1A};
+    --l-b-shade: #{#1A1A1A};  // Lighter Background Shade
+    --d-b-shade: #{#121212};  // Darker Background Shade
 
-    --border-colour: #{#333333};
-    --text-colour: #{#FFFFFF};
-    --text-colour-invert: #{#1A1A1A};
-    --link-colour: #{#007BFF};
+    --p-h-colour: #{#EE9AE5}; // Primary Highlight Colour
+    --p-d-colour: #{#EE9AE5}; // Primary Decal Colour
+    --p-b-colour: #{#707070}; // Primary Border Colour
+
+    --p-t-colour: #{#FFFFFF}; // Lighter Text Colour
+    --s-t-colour: #{#DFDFDF}; // Darker Text Colour
   }
 }
